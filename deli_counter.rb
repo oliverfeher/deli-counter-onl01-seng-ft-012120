@@ -8,6 +8,8 @@ def line(array)
     array.each do |name|
       array1.push("#{counter}. #{name}")
       counter +=1
+    end
+    puts "The line is currently: #{array1.join(" ")}"
   else
     puts "The line is currently empty."
   end
