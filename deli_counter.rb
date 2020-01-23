@@ -22,10 +22,10 @@ end
 
 
 def now_serving(line)
-  if line.length == 0
-    puts "There is nobody waiting in line!"
+  if line.length == 0 # could say: "if deli.empty?"
+    puts"There is nobody waiting to be served!"
   else
-    puts "Currently serving #{line[0]}!"
-    line.shift
+    puts "Currently serving #{line[0]}." # could say: "Currently serving #{line.first}."
+    line.shift # this works in the IDE but no on repl.it
   end
 end
