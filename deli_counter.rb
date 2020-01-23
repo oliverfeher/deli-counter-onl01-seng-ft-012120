@@ -22,7 +22,7 @@ end
 
 
 def now_serving(line)
-  if line.length < 1
+  if line.length == 1
     puts "The line is currently empty!"
   else
     puts "Currently serving #{line[0]}"
